@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
 	def show
 		@user = User.first
 	end
+
+	def edit
+		@user = User.find(params[:id])
+	end
 end
